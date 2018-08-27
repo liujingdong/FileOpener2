@@ -123,7 +123,9 @@ public class FileOpener2 extends CordovaPlugin {
 				}
 				else {
 					intent.setDataAndType(path, contentType);
-					intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+          //安转后打开
+          intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//					intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				}
 				/*
 				 * @see
